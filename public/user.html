@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fakebook | Hide who you are</title>
+    <link
+    href="https://fonts.googleapis.com/css?family=Spicy+Rice&display=swap&family=Karla:400,700|Rubik:400,400i,700&display=swap"
+    rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section id="main">
+        <nav id="navbar">
+           <h1>Fakebook</h1>
+           <h2><a href="./user.html">Home</a></h2>
+           <h2><a href="./friend-list.html">Friends</a></h2>
+           <!-- <h2><a href="./thoughts.html">Thoughts</a></h2> -->
+        </nav>
+        <section id="main-list">
+            <section id="user" class="col-3">
+                <h2> Add Users:</h2>
+                <form id="user-form">
+                    <div id="user-input">
+                        <input type="text" name="user" id="user-first-name" placeholder="First Name">
+                        <label for="first-name"></label>
+                        <input type="text" name="user" id="user-last-name" placeholder="Last Name">
+                        <label for="last-name"></label>
+                    </div>
+                    <div>
+                         <button id="add-user" class="">Add</button>
+                        <button id="delete-user" class="">Delete</button>
+                        <button id="update-user" class="">Update</button>
+                    </div>
+                </form>
+                <section id="user-list">
+                    <h2>All Users:</h2>
+                </section>
+            </section>
+            <section id="thoughts" class="col-6">
+                <h2>Add Thoughts:</h2>
+                <form id="thought-form">
+                    <div id="thought-input">
+                        <label for="comment">What are you thinking?</label>
+                        <textarea class="form-textarea form-input" id="comment" name="comment" required></textarea>
+                        <select name="" id="reaction-list">
+                            <option value="Like">Like</option>
+                            <option value="Love">Love</option>
+                            <option value="Lust">Lust</option>
+                            <option value="Loathe">Loathe</option>
+                            <option value="Low-Down">Low-Down</option>
+                        </select>
+                    </div>
+                    <button>Add a Thought</button>
+                    <!-- <button>Update Thought</button>
+                    <button>Delete Thought</button> -->
+                </form>
+                <section>
+                    <h2>All Thoughts:</h2>
+                </section>
+            </section>
+            <section id="friends" class="col-3">
+                <h2> Add Friends:</h2>
+                <form id="friends-form">
+                    <div id="friend-input">
+                        <input type="text" name="friend" id="first-name" placeholder="First Name">
+                        <label for="first-name"></label>
+                        <input type="text" name="friend" id="last-name" placeholder="Last Name">
+                        <label for="last-name"></label>
+                    </div>
+                    <div>
+                         <button id="add-friend" class="">Add</button>
+                        <button id="delete-friend" class="">Delete</button>
+                        <button id="update-friend" class="">Update</button>
+                    </div>
+                </form>
+                <section id="friends-list">
+                    <h2>All Friends:</h2>
+                </section>
+            </section>
+        </section>
+    </section>
+    <script src="./assets/js/add-friend.js"></script>
+    <script src="./assets/js/add-user.js"></script>
+    <script src="./assets/js/add-thought.js"></script>
+    <script src="./assets/js/add-reaction.js"></script>
+</body>
+</html>

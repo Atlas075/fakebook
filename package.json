@@ -1,0 +1,24 @@
+{
+  "name": "fakebook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atlas075/fakebook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Atlas075/fakebook/issues"
+  },
+  "homepage": "https://github.com/Atlas075/fakebook#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.6.0"
+  }
+}
